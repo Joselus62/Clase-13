@@ -1,12 +1,34 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Movies from './components/movies/Movies';
 import Contador from './components/contador/Contador';
 import './App.css';
 
 const movieData = [
-  {thumbnail: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmendoza.tur.ar%2Fwp-content%2Fuploads%2F2021%2F10%2FDSC6234.jpg&imgrefurl=https%3A%2F%2Fmendoza.tur.ar%2F&tbnid=72Q-Tn4jDFqiUM&vet=12ahUKEwjzp5WNq4D7AhXPrZUCHReuDJYQMygCegUIARDjAQ..i&docid=yG7mEyaI45fqYM&w=1500&h=1001&itg=1&q=Mendoza&hl=es-419&ved=2ahUKEwjzp5WNq4D7AhXPrZUCHReuDJYQMygCegUIARDjAQ" , urlvideo: "" , preview: "", title:""},
-  {thumbnail: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmendoza.tur.ar%2Fwp-content%2Fuploads%2F2021%2F10%2FDSC6234.jpg&imgrefurl=https%3A%2F%2Fmendoza.tur.ar%2F&tbnid=72Q-Tn4jDFqiUM&vet=12ahUKEwjzp5WNq4D7AhXPrZUCHReuDJYQMygCegUIARDjAQ..i&docid=yG7mEyaI45fqYM&w=1500&h=1001&itg=1&q=Mendoza&hl=es-419&ved=2ahUKEwjzp5WNq4D7AhXPrZUCHReuDJYQMygCegUIARDjAQ" , urlvideo: "" , preview: "", title: ""},
-  {thumbnail: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.redcabanias.com%2Fblog%2Fwp-content%2Fuploads%2F2019%2F06%2Fmm1.jpg&imgrefurl=https%3A%2F%2Fwww.redcabanias.com%2Fblog%2F15-cosas-para-hacer-en-mendoza%2F&tbnid=W6SCjmRQHQihcM&vet=12ahUKEwjzp5WNq4D7AhXPrZUCHReuDJYQMygFegUIARDpAQ..i&docid=MfN9S6vGms98sM&w=505&h=519&q=Mendoza&hl=es-419&ved=2ahUKEwjzp5WNq4D7AhXPrZUCHReuDJYQMygFegUIARDpAQ" , urlvideo: "" , preview: "", title: ""}
+  {
+  thumbnail: require ('./components/containers/img/Aconcagua.jpg'),
+  altText: 'Imagen1',
+  title: 'Cerro Aconcagua'
+},
+{
+  thumbnail: require ('./components/containers/img/Monumento.jpg'),
+  altText: 'Imagen2',
+  title: 'Monumento al Ejército de los Andes'
+},
+{
+  thumbnail: require ('./components/containers/img/Potrerillos.jpg'),
+  altText: 'Imagen3',
+  title: 'Dique Potrerillos'
+},
+{
+  thumbnail: require ('./components/containers/img/ValleGrande.jpg'),
+  altText: 'Imagen4',
+  tilte: 'Dique Valle Grande'
+},
+{
+  thumbnail: require ('./components/containers/img/Viñedo.jpg'),
+  altText: 'Imagen5',
+  title: 'Viñedo Mendocino'
+}
 ];
 
 function App() {
