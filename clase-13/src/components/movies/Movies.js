@@ -1,8 +1,8 @@
-import React, { usestate } from "react";
+import React, { useState } from "react";
 
 export default function Movies(props) {
 
-    const [count, setcount] = usestate(1);
+    const [count, setCount] = useState(1);
 
     // se usa sólo si viene data en los props.
     const myList = props.data.map( (element) => {
@@ -14,10 +14,10 @@ export default function Movies(props) {
     } );
 
     return ( <>
-                <button onClick={() => setcount(count + 1)}>
+                <button onClick={() => setCount(count + 1)}>
                     Add one movie
                 </button>
-                <button onClick={() => setcount(count - 1)}>
+                <button onClick={() => setCount(count - 1)}>
                     Substract one movie
                 </button>
                  { transformedChildren.slice(0,count) }
