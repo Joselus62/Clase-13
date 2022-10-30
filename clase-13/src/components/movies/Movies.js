@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import './Movies.css';
 
 export default function Movies(props) {
 
@@ -15,10 +14,10 @@ export default function Movies(props) {
     } );
 
     return ( <>
-                <button className="btn-size me-2" variant="success" onClick={() => setCount(count + 1)}>
+                <button onClick={() => setCount(count + 1)}>
                     Add one movie
                 </button>
-                <button className="btn-btn" variant="warning" onClick={() => setCount(count - 1)}>
+                <button onClick={() => setCount(count - 1)}>
                     Substract one movie
                 </button>
                  { transformedChildren.slice(0,count) }
